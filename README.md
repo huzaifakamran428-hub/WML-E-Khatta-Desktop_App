@@ -1,3 +1,30 @@
+Installing Python Command:
+winget install -e --id Python.Python.3.12
+
+python --version
+pip --version
+
+
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+pip install -r requirements.txt
+
+python main.py
+
+pyinstaller wml_ekhatta.spec
+
+winget install -e --id JRSoftware.InnoSetup
+
+iscc "installer\WML_E-Khatta_Setup.iss"
+
+cd "$env:USERPROFILE\Documents\WML_E-Khatta"
+.\venv\Scripts\Activate.ps1
+python main.py
+
+
 # WML E-Khatta
 
 A desktop app for **Waqare Medina Computers & Laptop** — inventory, sales,
