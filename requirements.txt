@@ -1,0 +1,6 @@
+PyQt6==6.7.1
+PyQt6-svg==6.7.1
+requests==2.32.3
+reportlab==4.2.2
+python-dateutil==2.9.0.post0
+pyinstaller==6.10.0
